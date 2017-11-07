@@ -12,6 +12,13 @@
     "watch:serve": "ts-node --inspect src/server.ts"
   },
   "dependencies": {
-    "camaleon-rabbitmq": "1.0.5"
+    "camaleon-rabbitmq": "1.0.5",
+    "tsc": "^1.20150623.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "ts-node": "^3.2.0"
   }
 }
