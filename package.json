@@ -1,0 +1,17 @@
+{
+  "name": "camaleon-rabbitmq-samples",
+  "version": "1.0.0",
+  "main": "./",
+  "license": "ISC",
+  "scripts": {
+    "build": "npm run build-ts && npm run tslint && echo Build finished!",
+    "build-ts": "tsc",
+    "build-watch": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "watch": "nodemon -e ts -w ./src -x npm run watch:serve",
+    "watch:serve": "ts-node --inspect src/server.ts"
+  },
+  "dependencies": {
+    "camaleon-rabbitmq": "1.0.5"
+  }
+}
